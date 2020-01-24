@@ -1,3 +1,33 @@
+.wrapper__login {
+  display: grid;
+  width: 100%;
+  grid-template: repeat(4, 1fr) / repeat(6, 1fr);
+}
+.login {
+  grid-column: 3 / 5;
+  grid-row: 2/4;
+  border: 1px solid rgb(92, 88, 88);
+  padding: 30px;
+  border-radius: 7px;
+  margin: 50px;
+}
 .login__title {
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.login__user,
+.login__pass {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.login__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.login__buttons > button {
+  padding: 5px;
 }
