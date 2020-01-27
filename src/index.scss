@@ -21,25 +21,25 @@
 .login {
   border: 1px solid red;
   border-radius: 7px;
-}
 
-.login__title {
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-.login__user,
-.login__pass {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
-}
-.login__buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-}
-.login__buttons > button {
-  padding: 5px;
+  .login__title {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .login__user,
+  .login__pass {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .login__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .login__buttons > button {
+    padding: 5px;
+  }
 }
