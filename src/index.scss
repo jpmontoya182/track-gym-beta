@@ -1,27 +1,58 @@
-@media (min-width: 768px) {
+// @media screen and (max-width: 768px) {
+//   .wrapper__login {
+//     display: grid;
+//     background-color: red;
+//     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+//   }
+//   .login {
+//     grid-column: 1 / 2;
+//     grid-row: 1 / 2;
+//     border: 1px solid green;
+//     border-radius: 7px;
+//   }
+// }
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
   .wrapper__login {
     display: grid;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-    height: 50vh;
+    background-color: red;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .wrapper__login {
+    display: grid;
+    background-color: blue;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+
   .login {
-    grid-column: 2 / 4;
-    grid-row: 2 / 4;
-    border: 1px solid green;
-    padding: 30px 60px;
-    border-radius: 7px;
-    margin: 50px;
+    .login__user,
+    .login__pass {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
 .wrapper__login {
-  display: flex;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  height: 50vh;
 }
 
 .login {
-  border: 1px solid red;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  border: 1px solid green;
+  padding: 30px 60px;
   border-radius: 7px;
+}
 
+.login {
   .login__title {
     font-weight: bold;
     display: flex;
