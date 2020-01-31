@@ -2,7 +2,7 @@
   .wrapper__login {
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-    height: 100vh;
+    height: 50vh;
   }
   .login {
     grid-column: 2 / 4;
@@ -10,7 +10,7 @@
     border: 1px solid green;
     padding: 30px 60px;
     border-radius: 7px;
-    margin: 100px;
+    margin: 50px;
   }
 }
 

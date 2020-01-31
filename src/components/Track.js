@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Login from "./login/Login";
 import Home from "./home/Home";
 
-import "./Track.scss";
-
 const Track = () => {
   return (
-    <Router>
+    <Router data-test="track-component">
       <section>
         <ul>
           <li>
