@@ -1,20 +1,20 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Track from "./Track";
-import { findByTestAttrib } from "./utils/testing/utilsTest";
+import Home from "./Home";
+import { findByTestAttrib } from "../utils/testing/utilsTest";
 
 const defaultProps = {};
 
 // Factory function to creare a shallowWrapper
 const setup = (props = {}) => {
   const setupProps = { ...defaultProps, ...props };
-  return shallow(<Track {...setupProps} />);
+  return shallow(<Home {...setupProps} />);
 };
 
 describe("Test UI", () => {
-  test("render Track without error", () => {
+  test("render without error", () => {
     const wrapper = setup();
-    const component = findByTestAttrib(wrapper, "track-component");
+    const component = findByTestAttrib(wrapper, "home-component");
     expect(component.length).toBe(1);
   });
 });
