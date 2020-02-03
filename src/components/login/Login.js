@@ -7,11 +7,11 @@ export default function Login() {
         <section className="login__title">Login</section>
         <section className="login__user">
           <label>User : </label>
-          <input type="text" />
+          <input type="text" className="login__input" />
         </section>
         <section className="login__pass">
           <label>Password : </label>
-          <input type="Password" />
+          <input type="Password" className="login__input" />
         </section>
         <section className="login__buttons">
           <button>Send</button>
