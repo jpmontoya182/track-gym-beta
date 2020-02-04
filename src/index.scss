@@ -1,5 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 // mobiles
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
@@ -52,6 +54,8 @@ body {
   .wrapper__login {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+    height: 100vh;
+    overflow: hidden;
   }
 
   .login {
@@ -76,11 +80,14 @@ body {
   justify-content: center;
 }
 
-.login__title {
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+.alert {
+  background-color: rgb(212, 133, 133);
+  border: 1px solid rgb(119, 109, 109);
+  border-radius: 3px;
+  padding: 5px;
+  color: rgb(138, 36, 36);
+  margin: 3px 0;
+  font-size: small;
 }
 
 .login__user,
@@ -102,10 +109,6 @@ body {
   padding: 8px 10px;
   border: 1px solid black;
   border-radius: 5px;
-}
-
-.login__input:focus {
-  border: 1px solid black;
 }
 
 .login__user,
