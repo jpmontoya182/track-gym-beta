@@ -104,7 +104,11 @@ export default function MenuNav() {
 
   return (
     <div>
-      <GrainIcon onClick={toggleDrawer("left", true)} />
+      <section onClick={toggleDrawer("left", true)} className="menu-icon-home">
+        <GrainIcon />
+        <p>Menu</p>
+      </section>
+      {/* <Button onClick={toggleDrawer("left", true)}>Open Left</Button> */}
       <Drawer open={state.left} onClose={toggleDrawer("left", false)}>
         {sideList("left")}
       </Drawer>
