@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.1",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -20,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --coverage --watchAll=false",
     "test:dev": "react-scripts test --coverage --watchAll=true",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "debug": "react-scripts build --mode production --colors --devtool source-map",
+    "dependences": "source-map-explorer 'build/static/js/*.js'"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -63,6 +66,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "jest": "24.9.0",
-    "jest-enzyme": "^7.1.2"
+    "jest-enzyme": "^7.1.2",
+    "source-map-explorer": "^2.2.2"
   }
 }
